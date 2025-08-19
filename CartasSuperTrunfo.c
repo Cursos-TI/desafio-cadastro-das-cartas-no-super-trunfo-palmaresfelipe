@@ -20,7 +20,7 @@ int main(){
     Estado = A
     Código da carta = A01
     Cidade = Recife
-    População = 9539029
+    População = 1661017
     Área = 98.312
     PIB = 288.60
     Número de pontos Turísticos: 30
