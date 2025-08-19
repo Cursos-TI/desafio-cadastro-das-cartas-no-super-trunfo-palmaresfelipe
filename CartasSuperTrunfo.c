@@ -2,9 +2,6 @@
 
 int main(){
 
-    // Desafio Nivel Novato - Criando as Cartas Super Trunfo.
-    // Aluno: Felipe Palmares, ADS Estácio EAD 2025/3.
-
     //Carta #01
 
     char estado1 = 'A';
@@ -21,15 +18,15 @@ int main(){
     Código da carta = A01
     Cidade = Recife
     População = 1661017
-    Área = 98.312
-    PIB = 288.60
+    Área = 218.80
+    PIB = 54.69
     Número de pontos Turísticos: 30
     */
 
     printf("Bem vindo ao SuperTrunfo, para sua primeira jogatina você receberá duas cartas.\n\n");
     
 
-    printf("Você recebeu sua primeira carta. Na sua primeira carta você descobriu uma Cidade do Estado de Pernambuco.\n\n");
+    printf("Você recebeu sua primeira carta.\n\n");
     printf("Vamos confirmar os dados juntos?\n\n");
 
     printf("Carta 1\n");
@@ -47,7 +44,7 @@ int main(){
     scanf("%f", &pib1);
     printf("Digite o Número de Pontos Turísticos:\n");
     scanf("%d", &turisticos1);
-    printf("\nCarta 1: a Letra %c representa o Estado de Pernambuco.\nCódigo da carta: %s\nCidade: %s\nPopulação: %d habitantes.\nÁrea: %.3f km².\nPIB: %.2f bilhões de reais.\nPontos Turísticos: %d \n\n", estado1, codigo1, cidade1, populacao1, area1, pib1, turisticos1);
+    printf("\nCarta 1: a Letra %c representa o Estado de Pernambuco.\nCódigo da carta: %s\nCidade: %s\nPopulação: %d habitantes.\nÁrea: %.2f km².\nPIB: %.2f bilhões de reais.\nPontos Turísticos: %d \n\n", estado1, codigo1, cidade1, populacao1, area1, pib1, turisticos1);
 
 
 
@@ -73,7 +70,7 @@ int main(){
     */
 
 
-    printf("Você recebeu sua segunda carta. Na sua segunda carta você descobriu uma Cidade do Estado de Sergipe.\n\n");
+    printf("Você recebeu sua segunda carta.\n\n");
 
     printf("Carta 2\n\n");
     printf("Digite a letra que representa o Estado:\n");
