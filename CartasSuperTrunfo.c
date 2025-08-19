@@ -12,14 +12,18 @@ int main(){
     float pib1;
     int turisticos1;
 
+    // OBS: O desafio foi construído com base nas informações dos exemplos abaixo.
+
     /*
-    Informações da Carta 1
+    Exemplo:
+
+    Carta 1:
     Estado = A
     Código da carta = A01
     Cidade = Recife
-    População = 1661017
-    Área = 218.80
-    PIB = 54.69
+    População = 1661017 habitantes
+    Área = 218.80 km²
+    PIB = 54.69 bilhões de reais
     Número de pontos Turísticos: 30
     */
 
@@ -40,11 +44,11 @@ int main(){
     scanf("%d", &populacao1);
     printf("Digite a Área em km²:\n");
     scanf("%f", &area1);
-    printf("Digite o PIB:\n");
+    printf("Digite o PIB em bilhões:\n");
     scanf("%f", &pib1);
     printf("Digite o Número de Pontos Turísticos:\n");
     scanf("%d", &turisticos1);
-    printf("\nCarta 1: a Letra %c representa o Estado de Pernambuco.\nCódigo da carta: %s\nCidade: %s\nPopulação: %d habitantes.\nÁrea: %.2f km².\nPIB: %.2f bilhões de reais.\nPontos Turísticos: %d \n\n", estado1, codigo1, cidade1, populacao1, area1, pib1, turisticos1);
+    printf("\nCarta 1:\nLetra: %c\nCódigo da carta: %s\nCidade: %s\nPopulação: %d habitantes.\nÁrea: %.2f km².\nPIB: %.2f bilhões de reais.\nPontos Turísticos: %d \n\n", estado1, codigo1, cidade1, populacao1, area1, pib1, turisticos1);
 
 
 
@@ -63,9 +67,9 @@ int main(){
     Estado = B
     Código da carta = B01
     Cidade = Aracaju
-    População = 670000
-    Área = 181.90
-    PIB = 18.40
+    População = 670000 habitantes
+    Área = 181.90 km²
+    PIB = 18.40 bilhões de reais
     Número de pontos Turísticos: 14
     */
 
@@ -83,15 +87,14 @@ int main(){
     scanf("%d", &populacao2);
     printf("Digite a Área em km²\n");
     scanf("%f", &area2);
-    printf("Digite o PIB:\n");
+    printf("Digite o PIB em bilhões:\n");
     scanf("%f", &pib2);
     printf("Digite o Número de Pontos Turísticos:\n");
     scanf("%d", &turisticos2);
-    printf("\nCarta 2: a Letra %c representa o Estado de Sergipe.\nCódigo da carta: %s\nCidade: %s \nPopulação: %d habitantes.\nÁrea: %.2f km².\nPIB: %.2f bilhões de reais.\nPontos Turísticos: %d \n", estado2, codigo2, cidade2, populacao2, area2, pib2, turisticos2);
+    printf("\nCarta 2:\nLetra: %c\nCódigo da carta: %s\nCidade: %s \nPopulação: %d habitantes.\nÁrea: %.2f km².\nPIB: %.2f bilhões de reais.\nPontos Turísticos: %d \n", estado2, codigo2, cidade2, populacao2, area2, pib2, turisticos2);
 
 
 
     return 0;
-
 
 }
