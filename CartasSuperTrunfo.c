@@ -44,7 +44,7 @@ int main(){
     float area1;
     float pib1;
     int turisticos1;
-    float densidade1, densidade3;
+    float densidade1, densidadeinvertida1;
     float pibpercapita1;
     float SuperPoder1;
 
@@ -72,8 +72,8 @@ int main(){
 
     densidade1 = populacao1 / area1;
     pibpercapita1 = (pib1*1000000000) / populacao1;
-    densidade3 = area1 / populacao1;
-    SuperPoder1 = (float) (populacao1 + area1 + pib1 + turisticos1 + pibpercapita1 + densidade3);
+    densidadeinvertida1 = 1 / densidade1;
+    SuperPoder1 = (float) (populacao1 + area1 + pib1 + turisticos1 + pibpercapita1 + densidadeinvertida1);
 
 
     printf("\nCarta 1:\nLetra: %c\nCódigo da carta: %s\nCidade: %s\nPopulação: %lu habitantes.\nÁrea: %.2f km².\nDensidade Populacional: %.2f habitantes por km²\nPIB: %.2f bilhões de reais.\nPIB Per Capita: %.2f reais.\nPontos Turísticos: %d \n", estado1, codigo1, cidade1, populacao1, area1, densidade1, pib1, pibpercapita1, turisticos1);
@@ -86,11 +86,11 @@ int main(){
     char estado2 = 'B';
     char codigo2[10];
     char cidade2[20];
-    unsigned int populacao2;
+    unsigned long int populacao2;
     float area2;
     float pib2;
     int turisticos2;
-    float densidade2, densidade4;
+    float densidade2, densidadeinvertida2;
     float pibpercapita2;
     float SuperPoder2;
 
@@ -114,8 +114,9 @@ int main(){
 
     densidade2 = populacao2 / area2;
     pibpercapita2 = (pib2*1000000000) / populacao2;
-    densidade4 = area2 / populacao2;
-    SuperPoder2 = (float) (populacao2 + area2 + pib2 + turisticos2 + pibpercapita2 + densidade4);
+    densidadeinvertida2 = 1/densidade2;
+
+    SuperPoder2 = (float) (populacao2 + area2 + pib2 + turisticos2 + pibpercapita2 + densidadeinvertida2);
 
 
     printf("\nCarta 2:\nLetra: %c\nCódigo da carta: %s\nCidade: %s \nPopulação: %lu habitantes.\nÁrea: %.2f km².\nDensidade Populacional: %.2f habitantes por km²\nPIB: %.2f bilhões de reais.\nPIB per capita: %.2f reais.\nPontos Turísticos: %d \n", estado2, codigo2, cidade2, populacao2, area2, densidade2, pib2, pibpercapita2, turisticos2);
@@ -133,13 +134,13 @@ int main(){
 
     int resultadopopulacao, resultadoarea, resultadopib, resultadoturisticos, resultadodensidade, resultadopibpercapita, resultadosuperpoder;
     
-    resultadopopulacao = populacao1>populacao2;
-    resultadoarea = area1>area2;
-    resultadopib = pib1>pib2;
-    resultadoturisticos = turisticos1>turisticos2;
-    resultadodensidade = densidade1<densidade2;
-    resultadopibpercapita = pibpercapita1>pibpercapita2;
-    resultadosuperpoder = SuperPoder1>SuperPoder2;
+    resultadopopulacao = populacao1 > populacao2;
+    resultadoarea = area1 > area2;
+    resultadopib = pib1 > pib2;
+    resultadoturisticos = turisticos1 > turisticos2;
+    resultadodensidade = densidade1 < densidade2;
+    resultadopibpercapita = pibpercapita1 > pibpercapita2;
+    resultadosuperpoder = SuperPoder1 > SuperPoder2;
 
 
     printf("População:%d\n", resultadopopulacao);
@@ -158,7 +159,7 @@ int main(){
     printf("PIB Per Capita: a Carta 1 venceu.\n");
     printf("Super Poder: a Carta 1 venceu.\n\n");
 
-    printf("Resultado Geral: a Carta 1 venceu.\n");
+    printf("Resultado Geral: a Carta 1 venceu.\n\n");
 
 
 
